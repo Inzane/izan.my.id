@@ -66,7 +66,7 @@ $(function() {
 	
     // 3. countdown SETUP
     $("#countdown").countdown({
-        date: "7 June 2018 12:00:00", // countdown target date settings
+        date: "20 May 2025 12:00:00", // countdown target date settings
         format: "on"
     }, function() {});
 	
@@ -221,7 +221,7 @@ $(function() {
 	
 	// 11. YTPlayer
     $("#background-video").YTPlayer({
-        videoId: "r8j-MWq4HZc", // DEMO URL is: https://www.youtube.com/watch?v=r8j-MWq4HZc
+        videoId: "r8j-MWq4HZc", // DEMO URL is: https://www.youtube.com/watch?v=BcijdTyFzgE
         mute: true,             // options: true, false
         pauseOnScroll: false,
         repeat: true,
