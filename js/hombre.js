@@ -221,8 +221,8 @@ $(function() {
 	
 	// 11. YTPlayer
     $("#background-video").YTPlayer({
-        videoId: "BcijdTyFzgE", // DEMO URL is: https://www.youtube.com/watch?v=BcijdTyFzgE
-        mute: true,             // options: true, false
+        videoId: "BcijdTyFzgE", // DEMO URL is: https://www.youtube.com/watch?v=6wrIKNNhMLI
+        mute: false,             // options: true, false
         pauseOnScroll: false,
         repeat: true,
         fitToBackground: true,
