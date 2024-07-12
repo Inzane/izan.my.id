@@ -85,7 +85,7 @@ $(function() {
         animationIn: "fadeInLeft",
         animationOut: "fadeOutRight",
         speed: 4000,
-        words: ['this is<br><span class="highlighter">Hombre</span>', 'Hombre<br><span class="highlighter">means man</span>']
+        words: ['Hacked by<br><span class="highlighter">Zcy7he</span>', 'Welcome<br><span class="highlighter">H O M E</span>']
     });
 	
     // 6. facts counter
