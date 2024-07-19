@@ -1,783 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>
-            Hombre || Responsive Coming Soon Page
-        </title>
-        <meta content="" name="description">
-        <meta content="" name="author">
-        <meta content="" name="keywords">
-        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-        <!-- Hombre v1.0 || ex nihilo || June 2017 -->
-        <!-- style start -->
-        <link href="css/plugins.css" media="all" rel="stylesheet" type="text/css">
-        <link href="css/style.css" media="all" rel="stylesheet" type="text/css"><!-- style end -->
-        <!-- google fonts start -->
-        <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7CDosis:200,300,400,500,600,700,800%7CMontserrat:400,700%7COswald:300,400,700" rel="stylesheet"
-        type="text/css"><!-- google fonts end -->
-    </head>
-    <body>
-        <!-- preloader start -->
-        <div class="preloader-bg"></div>
-        <div id="preloader">
-            <div id="preloader-status">
-                <div class="preloader-position loader">
-                    <span></span>
-                </div>
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+	<meta name="description" content="Ican - Creative Studio" />
+	<meta property="og:title" content="Ican - Creative Studio" />
+	<meta property="og:description" content="Ican - Creative Studio" />
+	<meta property="og:image" content="Ican - Creative Studio" />
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- FAVICONS ICON -->
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+	
+	<!-- PAGE TITLE HERE -->
+	<title>Ican - Creative Studio</title>
+
+	<!-- MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="css/templete.min.css">
+	<link rel="stylesheet" type="text/css" class="skin" href="css/skin/skin-9.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.localizationTool.css">
+	<link href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">	
+	
+</head>
+<body id="bg" class="font-poppins">
+<div id="loading-area"><div></div></div>
+<div class="page-wraper">
+	<canvas class="site-nav-canvas" style="display: none;"></canvas>
+    <!-- Content -->
+	
+        <!-- Side Nav -->
+        <div class="about-sidebox"> 
+			<a href="javascript:void(0)" class="closebtn bg-primary">×</a>
+            <div class="about-section">
+                <div class="contact-box">
+					<div class="contact-form">
+						<form method="post" class="dzForm dezPlaceAni" action="script/contact.php">
+							<h6 class="title">Contact Us</h6>
+							<div class="dzFormMsg"></div>
+							<input type="hidden" value="Contact" name="dzToDo" >
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label>Full Name</label>
+										<input name="dzName" type="text" required class="form-control ">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label>Your Email Address</label>
+										<input name="dzEmail" type="email" class="form-control" required >
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label>Your Message</label>
+										<textarea name="dzMessage" rows="4" class="form-control" required ></textarea>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="g-recaptcha" data-sitekey="6LfVlQ8jAAAAAMP8dIWFL4tpCNb0HLPcEkvHnG2H" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+									<input class="form-control d-none" style="display:none;" data-recaptcha="true" required data-error="Please complete the Captcha">
+								</div>
+								<div class="col-md-12">
+									<button name="submit" type="submit" value="Submit" class="site-button gradient shadow button-lg black">Send Message</button>
+								</div>
+							</div>
+						</form>
+						<div class="map-box">
+							<iframe src="https://maps.google.com/maps?q=Jln.%20Cihanjuang%20No.%20179&t=&z=13&ie=UTF8&iwloc=&output=embed" class="align-self-stretch radius-sm" style="border:0;" allowfullscreen></iframe>
+						</div>
+						<a href="#" class="site-button map-btn"><span>View Map</span><span>Close</span></a>
+					</div>
+					<div class="contact-info">
+						<div class="col">
+							<div>
+								<h5 class="title">Location</h5>
+								<p>40513 Cihanjuang Road Cimahi City, Indonesia</p>
+							</div>
+						</div>
+						<div class="col">
+							<div>
+								<h5 class="title">Email</h5>
+								<a href="mailto:erlambang@consultant.com">erlambang@consultant.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="gallery-area content scroll-off" style="background-image:url(images/background/bg1.gif);">
+					<div class="row lightgallery" id="masonry">
+						<div class="col-md-6 col-6 card-container wow flipInX" data-wow-duration="0.80s" data-wow-delay="0.5s">
+							<div class="gallery-box">
+								<div class="gallery-media" data-exthumbimage="images/gallery/pic1.gif" data-src="images/gallery/main-pic1.gif" title="Title Come Here">
+									<img src="images/gallery/pic1.gif" alt=""/>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-6 card-container">
+							<div class="gallery-box">
+								<div class="gallery-media check-km" data-exthumbimage="images/gallery/pic2.jpg" data-src="images/gallery/main-pic2.jpg" title="Title Come Here">
+									<img src="images/gallery/pic2.jpg" alt=""/>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-6 card-container">
+							<div class="gallery-box">
+								<div class="gallery-media check-km" data-exthumbimage="images/gallery/pic3.jpg" data-src="images/gallery/main-pic3.jpg" title="Title Come Here">
+									<img src="images/gallery/pic3.jpg" alt=""/>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-6 card-container">
+							<div class="gallery-box">
+								<div class="gallery-media check-km" data-exthumbimage="images/gallery/pic4.jpg" data-src="images/gallery/main-pic4.jpg" title="Title Come Here">
+									<img src="images/gallery/pic4.jpg" alt=""/>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-6 card-container">
+							<div class="gallery-box">
+								<div class="gallery-media check-km" data-exthumbimage="images/gallery/pic5.jpg" data-src="images/gallery/main-pic5.jpg" title="Title Come Here">
+									<img src="images/gallery/pic5.jpg" alt=""/>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-6 card-container">
+							<div class="gallery-box">
+								<div class="gallery-media check-km" data-exthumbimage="images/gallery/pic6.jpg" data-src="images/gallery/main-pic6.jpg" title="Title Come Here">
+									<img src="images/gallery/pic6.jpg" alt=""/>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-6 card-container">
+							<div class="gallery-box">
+								<div class="gallery-media check-km" data-exthumbimage="images/gallery/pic7.jpg" data-src="images/gallery/main-pic7.jpg" title="Title Come Here">
+									<img src="images/gallery/pic7.jpg" alt=""/>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-6 card-container">
+							<div class="gallery-box">
+								<div class="gallery-media check-km" data-exthumbimage="images/gallery/pic8.jpg" data-src="images/gallery/main-pic8.jpg" title="Title Come Here">
+									<img src="images/gallery/pic8.jpg" alt=""/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
-        </div><!-- preloader end -->
-        <!-- cover all start -->
-        <div class="cover-all"></div><!-- cover all end -->
-        <!-- hero bg start -->
-        <div class="hero-fullscreen">
-            <!-- shadow start -->
-            <div class="top-shadow"></div><!-- shadow end -->
-            <!-- YouTube video start -->
-            <div class="background-video YT-bg slideBgImg-video hero-bg" id="background-video"></div><!-- YouTube video end -->
-        </div><!-- hero bg end -->
-        <!-- ui layer start -->
-        <div id="ui-layer">
-            <!-- ui layer inner start -->
-            <div class="ui-layer-inner">
-                <!-- menu start -->
-                <div class="fadeIn-element-2" id="menu-wrapper">
-                    <!-- menu button start -->
-                    <button class="lines-button minus menu-toggle" id="main-menu-caller" type="button"><span class="lines"></span></button> <!-- menu button end -->
-                    <!-- navigation start -->
-                    <div id="main-menu">
-                        <div class="menu-nav-wrapper">
-                            <nav class="menu-nav">
-                                <ul>
-                                    <li class="menu">
-                                        <a class="menu-state active link link--kukuri" data-letters="Home" href="#" id="fire-home">Home</a>
-                                    </li>
-                                    <li class="menu">
-                                        <a class="menu-state link link--kukuri" data-letters="About" href="#" id="fire-about">About</a>
-                                    </li>
-                                    <li class="menu">
-                                        <a class="menu-state link link--kukuri" data-letters="Services" href="#" id="fire-services">Services</a>
-                                    </li>
-                                    <li class="menu">
-                                        <a class="menu-state link link--kukuri" data-letters="Works" href="#" id="fire-works">Works</a>
-                                    </li>
-                                    <li class="menu">
-                                        <a class="menu-state link link--kukuri" data-letters="Contact" href="#" id="fire-contact">Contact</a>
-                                    </li>
-                                    <li class="menu credits brackets">
-                                        <a href="#">&copy;2017 All Rights Reserved.</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div><!-- navigation end -->
-                </div><!-- menu end -->
-                <!-- home start -->
-                <div class="upper-page current" id="home">
-                    <!-- border top start -->
-                    <div class="border-top top-position"></div><!-- border top end -->
-                    <!-- border left start -->
-                    <div class="border-left left-position"></div><!-- border left end -->
-                    <!-- border right start -->
-                    <div class="border-right right-position"></div><!-- border right end -->
-                    <!-- border bottom start -->
-                    <div class="border-bottom bottom-position"></div><!-- border bottom end -->
-                    <!-- social icons start -->
-                    <div class="social-icons-wrapper fadeIn-element-2">
-                        <ul class="social-icons">
-                            <li class="social-icon">
-                                <a class="ion-social-twitter" href="#"></a>
-                            </li>
-                            <li class="social-icon">
-                                <a class="ion-social-facebook" href="#"></a>
-                            </li>
-                            <li class="social-icon">
-                                <a class="ion-social-googleplus" href="#"></a>
-                            </li>
-                            <li class="social-icon">
-                                <a class="ion-social-youtube" href="#"></a>
-                            </li>
-                            <li class="social-icon">
-                                <a class="ion-social-linkedin" href="#"></a>
-                            </li>
-                            <li class="social-icon">
-                                <a class="ion-social-instagram" href="#"></a>
-                            </li>
-                            <li class="social-icon">
-                                <a class="ion-social-pinterest" href="#"></a>
-                            </li>
-                            <li class="social-icon">
-                                <a class="ion-social-dribbble" href="#"></a>
-                            </li>
-                        </ul>
-                    </div><!-- social icons end -->
-                    <!-- center container start -->
-                    <div class="center-container-home">
-                        <!-- center block start -->
-                        <div class="center-block-home">
-                            <!-- upper content start -->
-                            <div class="upper-content">
-                                <!-- container start -->
-                                <div class="container sections section-home">
-                                    <!-- row start -->
-                                    <div class="row">
-                                        <!-- intro start -->
-                                        <div class="fadeIn-element" id="intro-wrapper">
-                                            <!-- intro spacer start -->
-                                            <div class="intro-spacer"></div><!-- intro spacer end -->
-                                            <ul>
-                                                <li class="brackets">
-                                                    <h6>
-                                                        <a href="#">an ex nihilo template</a>
-                                                    </h6>
-                                                </li>
-                                            </ul>
-                                            <div class="word-slide">
-                                                <!-- wordRotator start -->
-                                                <h1 id="wordrotator"></h1><!-- wordRotator end -->
-                                            </div><!-- decoration start -->
-                                            <div class="decoration">
-                                                <div class="decoration-left"></div>
-                                                <div class="decoration-effect">
-                                                    <a class="effect-bubba ex-modal-launcher">Newsletter</a>
-                                                </div>
-                                                <div class="decoration-right"></div>
-                                            </div><!-- decoration end -->
-                                            <!-- intro spacer start -->
-                                            <div class="intro-spacer-2"></div><!-- intro spacer end -->
-                                            <!-- countdown start -->
-                                            <div id="countdown-wrapper">
-                                                <p class="until-launch">
-                                                    Launching in
-                                                </p>
-                                                <ul id="countdown">
-                                                    <!-- seconds start -->
-                                                    <li>
-                                                        <span class="seconds">00</span>
-                                                        <p class="timeRefSeconds">
-                                                            Seconds
-                                                        </p>
-                                                    </li><!-- seconds end -->
-                                                    <!-- days start -->
-                                                    <li>
-                                                        <span class="days">00</span>
-                                                        <p class="timeRefDays">
-                                                            Days
-                                                        </p>
-                                                    </li><!-- days end -->
-                                                </ul>
-                                            </div><!-- countdown end -->
-                                            <!-- intro spacer start -->
-                                            <div class="intro-spacer-2"></div><!-- intro spacer end -->
-                                        </div><!-- intro end -->
-                                    </div><!-- row end -->
-                                </div><!-- container end -->
-                            </div><!-- upper content end -->
-                        </div><!-- center block end -->
-                    </div><!-- center container end -->
-                </div><!-- home end -->
-                <!-- signup form start -->
-                <div class="ex-modal">
-                    <!-- center container start -->
-                    <div class="center-container-ex-modal">
-                        <!-- center block start -->
-                        <div class="center-block-ex-modal">
-                            <!-- newsletter form start -->
-                            <div class="reverse-rotation-ex-modal">
-                                <!-- row start -->
-                                <div class="row">
-                                    <h5>
-                                        Newsletter sign up
-                                    </h5>
-                                    <h4>
-                                        Subscribe
-                                    </h4>
-                                </div><!-- row end -->
-                                <!-- row start -->
-                                <div class="row">
-                                    <div id="subscribe-wrapper">
-                                        <div id="newsletter">
-                                            <div class="newsletter">
-                                                <form action="subscribe.php" id="subscribe" method="post" name="subscribe">
-                                                    <input class="subscribe-requiredField subscribe-email" id="subscribe-email" name="subscribe-email" placeholder="Email" type="text"> <button class=
-                                                    "c-btn c-btn-dark fullwidth" id="submit-2" type="submit"><span>Subscribe</span></button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ex-modal-closer">
-                                        <span class="ion-close"></span>
-                                    </div>
-                                </div><!-- row end -->
-                            </div><!-- newsletter form end -->
-                        </div><!-- center block end -->
-                    </div><!-- center container end -->
-                </div><!-- signup form end -->
-                <!-- about start -->
-                <div class="lower-page" id="about">
-                    <!-- center container start -->
-                    <div class="center-container">
-                        <!-- center block start -->
-                        <div class="center-block">
-                            <!-- lower content start -->
-                            <div class="lower-content">
-                                <!-- container start -->
-                                <div class="container sections section-about">
-                                    <!-- row start -->
-                                    <div class="row">
-                                        <h2>
-                                            About
-                                        </h2>
-                                    </div><!-- row end -->
-                                    <!-- row start -->
-                                    <div class="row">
-                                        <!-- decoration 2 start -->
-                                        <div class="decoration-2">
-                                            <div class="decoration-left-2"></div>
-                                            <div class="decoration-effect-2">
-                                                <a class="effect-bubba-2" href="#">Who we are</a>
-                                            </div>
-                                            <div class="decoration-right-2"></div>
-                                        </div><!-- decoration 2 end -->
-                                    </div><!-- row end -->
-                                    <!-- row start -->
-                                    <div class="row">
-                                        <!-- col start -->
-                                        <div class="col-md-4 col-sm-4">
-                                            <!-- intro start -->
-                                            <div class="intro-years">
-                                                <h2>
-                                                    Years
-                                                </h2>
-                                                <div class="borders-berlin"></div>
-                                                <h3 class="facts-counter-number">
-                                                    41
-                                                </h3>
-                                                <h2>
-                                                    of Service
-                                                </h2>
-                                            </div><!-- intro end -->
-                                        </div><!-- col end -->
-                                        <!-- col start -->
-                                        <div class="col-md-8 col-sm-8">
-                                            <!-- quote start -->
-                                            <blockquote>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod in tellus in mattis. Aliquam erat volutpat. Praesent ultricies aliquet erat a
-                                                    semper.
-                                                </p>
-                                            </blockquote><!-- quote end -->
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod in tellus in mattis. Aliquam erat volutpat. Praesent ultricies aliquet erat a
-                                                semper. Maecenas risus ex, suscipit cursus felis vitae, iaculis tempor dolor. In dignissim <a class="link-underline" href="#">accumsan ullamcorper</a>.
-                                            </p>
-                                        </div><!-- col end -->
-                                    </div><!-- row end -->
-                                </div><!-- container end -->
-                            </div><!-- lower content end -->
-                        </div><!-- center block end -->
-                    </div><!-- center container end -->
-                </div><!-- about end -->
-                <!-- services start -->
-                <div class="lower-page" id="services">
-                    <!-- center container start -->
-                    <div class="center-container">
-                        <!-- center block start -->
-                        <div class="center-block">
-                            <!-- lower content start -->
-                            <div class="lower-content">
-                                <!-- container start -->
-                                <div class="container sections section-services">
-                                    <!-- row start -->
-                                    <div class="row">
-                                        <h2>
-                                            Services
-                                        </h2>
-                                    </div><!-- row end -->
-                                    <!-- row start -->
-                                    <div class="row">
-                                        <!-- decoration 2 start -->
-                                        <div class="decoration-2">
-                                            <div class="decoration-left-2"></div>
-                                            <div class="decoration-effect-2">
-                                                <a class="effect-bubba-2" href="#">What we do</a>
-                                            </div>
-                                            <div class="decoration-right-2"></div>
-                                        </div><!-- decoration 2 end -->
-                                    </div><!-- row end -->
-                                    <!-- row start -->
-                                    <div class="row text-center">
-                                        <!-- col start -->
-                                        <div class="col-md-4 services-block">
-                                            <h4 class="service-heading">
-                                                Design
-                                            </h4>
-                                            <div class="service-number">
-                                                1
-                                            </div>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod in tellus in mattis. Aliquam erat volutpat. Praesent ultricies aliquet erat a
-                                                <a class="link-underline" href="#">semper</a>.
-                                            </p>
-                                        </div><!-- col end -->
-                                        <!-- col start -->
-                                        <div class="col-md-4 services-block middle">
-                                            <h4 class="service-heading">
-                                                Branding
-                                            </h4>
-                                            <div class="service-number">
-                                                2
-                                            </div>
-                                            <p>
-                                                In dignissim accumsan ullamcorper. Aliquam nec augue id mauris convallis venenatis. Donec interdum ipsum quis varius tristique. Aenean tortor orci,
-                                                luctus ut arcu eu, <a class="link-underline" href="#">porta ultrices dui</a>.
-                                            </p>
-                                        </div><!-- col end -->
-                                        <!-- col start -->
-                                        <div class="col-md-4 services-block">
-                                            <h4 class="service-heading">
-                                                Brand Identity
-                                            </h4>
-                                            <div class="service-number">
-                                                3
-                                            </div>
-                                            <p>
-                                                Aenean commodo augue at libero luctus blandit. Ut non justo ipsum. Donec malesuada non nulla vitae porttitor. Ut vehicula augue erat, ut accumsan
-                                                <a class="link-underline" href="#">felis rutrum</a>.
-                                            </p>
-                                        </div><!-- col end -->
-                                    </div><!-- row end -->
-                                    <!-- divider start -->
-                                    <div class="dividerOT"></div><!-- divider end -->
-                                    <!-- row start -->
-                                    <div class="row text-center">
-                                        <!-- skills bar start -->
-                                        <div class="show-skillbar">
-                                            <!-- skill 1 start -->
-                                            <div class="skillbar" data-percent="85">
-                                                <span class="skillbar-title">Design</span>
-                                                <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
-                                            </div><!-- skill 1 end -->
-                                            <!-- skill 2 start -->
-                                            <div class="skillbar" data-percent="90">
-                                                <span class="skillbar-title">Branding</span>
-                                                <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
-                                            </div><!-- skill 2 end -->
-                                            <!-- skill 3 start -->
-                                            <div class="skillbar" data-percent="95">
-                                                <span class="skillbar-title">Brand Identity</span>
-                                                <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
-                                            </div><!-- skill 3 end -->
-                                        </div><!-- skills bar end -->
-                                    </div><!-- row end -->
-                                </div><!-- container end -->
-                            </div><!-- lower content end -->
-                        </div><!-- center block end -->
-                    </div><!-- center container end -->
-                </div><!-- services end -->
-                <!-- works start -->
-                <div class="lower-page" id="works">
-                    <!-- center container start -->
-                    <div class="center-container">
-                        <!-- center block start -->
-                        <div class="center-block">
-                            <!-- lower content start -->
-                            <div class="lower-content">
-                                <!-- container start -->
-                                <div class="container sections section-works">
-                                    <!-- row start -->
-                                    <div class="row">
-                                        <h2>
-                                            Works
-                                        </h2>
-                                    </div><!-- row end -->
-                                    <!-- row start -->
-                                    <div class="row">
-                                        <!-- decoration 2 start -->
-                                        <div class="decoration-2">
-                                            <div class="decoration-left-2"></div>
-                                            <div class="decoration-effect-2">
-                                                <a class="effect-bubba-2" href="#">What it looks like</a>
-                                            </div>
-                                            <div class="decoration-right-2"></div>
-                                        </div><!-- decoration 2 end -->
-                                    </div><!-- row end -->
-                                    <!-- row start -->
-                                    <div class="row text-center">
-                                        <!-- works content start -->
-                                        <ul id="works-content">
-                                            <!-- work 1 start -->
-                                            <li class="works-grid-inner">
-                                                <div class="relative-container">
-                                                    <div class="works-inner works-inner-img-1"></div>
-                                                    <div class="table-cell">
-                                                        <label class="works-title">Project #1</label>
-                                                        <p></p><a class="works-button" data-toggle="modal" href="#worksModal-1"><span>View project</span></a>
-                                                    </div>
-                                                </div>
-                                            </li><!-- work 1 end -->
-                                            <!-- work 2 start -->
-                                            <li class="works-grid-inner">
-                                                <div class="relative-container">
-                                                    <div class="works-inner works-inner-img-2"></div>
-                                                    <div class="table-cell">
-                                                        <label class="works-title">Project #2</label>
-                                                        <p></p><a class="works-button" data-toggle="modal" href="#worksModal-2"><span>View project</span></a>
-                                                    </div>
-                                                </div>
-                                            </li><!-- work 2 end -->
-                                            <!-- work 3 start -->
-                                            <li class="works-grid-inner">
-                                                <div class="relative-container">
-                                                    <div class="works-inner works-inner-img-3"></div>
-                                                    <div class="table-cell">
-                                                        <label class="works-title">Project #3</label>
-                                                        <p></p><a class="works-button" data-toggle="modal" href="#worksModal-3"><span>View project</span></a>
-                                                    </div>
-                                                </div>
-                                            </li><!-- work 3 end -->
-                                            <!-- work 4 start -->
-                                            <li class="works-grid-inner">
-                                                <div class="relative-container">
-                                                    <div class="works-inner works-inner-img-4"></div>
-                                                    <div class="table-cell">
-                                                        <label class="works-title">Project #4</label>
-                                                        <p></p><a class="works-button" data-toggle="modal" href="#worksModal-4"><span>View project</span></a>
-                                                    </div>
-                                                </div>
-                                            </li><!-- work 4 end -->
-                                            <!-- work 5 start -->
-                                            <li class="works-grid-inner">
-                                                <div class="relative-container">
-                                                    <div class="works-inner works-inner-img-5"></div>
-                                                    <div class="table-cell">
-                                                        <label class="works-title">Project #5</label>
-                                                        <p></p><a class="works-button" data-toggle="modal" href="#worksModal-5"><span>View project</span></a>
-                                                    </div>
-                                                </div>
-                                            </li><!-- work 5 end -->
-                                            <!-- work 6 start -->
-                                            <li class="works-grid-inner">
-                                                <div class="relative-container">
-                                                    <div class="works-inner works-inner-img-6"></div>
-                                                    <div class="table-cell">
-                                                        <label class="works-title">Project #6</label>
-                                                        <p></p><a class="works-button" data-toggle="modal" href="#worksModal-6"><span>View project</span></a>
-                                                    </div>
-                                                </div>
-                                            </li><!-- work 6 end -->
-                                        </ul><!-- works content end -->
-                                    </div><!-- row end -->
-                                </div><!-- container end -->
-                            </div><!-- lower content end -->
-                        </div><!-- center block end -->
-                    </div><!-- center container end -->
-                </div><!-- works end -->
-                <!-- contact start -->
-                <div class="lower-page" id="contact">
-                    <!-- center container start -->
-                    <div class="center-container">
-                        <!-- center block start -->
-                        <div class="center-block">
-                            <!-- lower content start -->
-                            <div class="lower-content">
-                                <!-- container start -->
-                                <div class="container sections section-contact">
-                                    <!-- row start -->
-                                    <div class="row">
-                                        <h2>
-                                            Contact
-                                        </h2>
-                                    </div><!-- row end -->
-                                    <!-- row start -->
-                                    <div class="row">
-                                        <!-- decoration 2 start -->
-                                        <div class="decoration-2">
-                                            <div class="decoration-left-2"></div>
-                                            <div class="decoration-effect-2">
-                                                <a class="effect-bubba-2" href="#">Where to find us</a>
-                                            </div>
-                                            <div class="decoration-right-2"></div>
-                                        </div><!-- decoration 2 end -->
-                                    </div><!-- row end -->
-                                    <!-- row start -->
-                                    <div class="row">
-                                        <!-- contact info start -->
-                                        <div class="contact-info-wrapper">
-                                            <!-- col start -->
-                                            <div class="col-sm-4">
-                                                <div class="contact-info-description">
-                                                    <i class="ion-ios-location-outline contact-info-description-img"></i> <span class="contact-info-text">ex Inc.<br>
-                                                    Touchdown Dr 1176</span>
-                                                </div>
-                                            </div><!-- col end -->
-                                            <!-- col start -->
-                                            <div class="col-sm-4">
-                                                <div class="contact-info-description">
-                                                    <i class="ion-ios-email-outline contact-info-description-img large"></i> <span class="contact-info-text large"><a class="link-underline contact"
-                                                    href="mailto:contact@domainname.com">contact@domainname.com</a></span>
-                                                </div>
-                                            </div><!-- col end -->
-                                            <!-- col start -->
-                                            <div class="col-sm-4">
-                                                <div class="contact-info-description">
-                                                    <i class="ion-ios-telephone-outline contact-info-description-img"></i> <span class="contact-info-text">[00] 11 - 76<br>
-                                                    [01] 11 - 76</span>
-                                                </div>
-                                            </div><!-- col end -->
-                                        </div><!-- contact info end -->
-                                    </div><!-- row end -->
-                                    <!-- divider start -->
-                                    <div class="dividerOT"></div><!-- divider end -->
-                                    <!-- row start -->
-                                    <div class="row">
-                                        <!-- contact form content start -->
-                                        <div id="contact-form">
-                                            <form action="contact.php" id="form" method="post" name="send">
-                                                <!-- col start -->
-                                                <div class="col-sm-4 col-md-4 col-lg-4">
-                                                    <input class="requiredField name" id="name" name="name" placeholder="Name" type="text">
-                                                </div><!-- col end -->
-                                                <!-- col start -->
-                                                <div class="col-sm-4 col-md-4 col-lg-4">
-                                                    <input class="requiredField email" id="email" name="email" placeholder="Email" type="text">
-                                                </div><!-- col end -->
-                                                <!-- col start -->
-                                                <div class="col-sm-4 col-md-4 col-lg-4">
-                                                    <input class="requiredField subject" id="subject" name="subject" placeholder="Subject" type="text">
-                                                </div><!-- col end -->
-                                                <div class="make-space">
-                                                    <textarea class="requiredField message" id="message" name="message" placeholder="Message"></textarea>
-                                                </div>
-                                                <div>
-                                                    <button class="c-btn fullwidth" id="submit" type="submit"><span>Submit</span></button>
-                                                </div>
-                                            </form>
-                                        </div><!-- contact form content end -->
-                                    </div><!-- row end -->
-                                </div><!-- container end -->
-                            </div><!-- lower content end -->
-                        </div><!-- center block end -->
-                    </div><!-- center container end -->
-                </div><!-- contact end -->
-            </div><!-- ui layer inner end -->
-        </div><!-- ui layer end -->
-        <!-- works modal content wrapper start -->
-        <!-- works modal 1 start -->
-        <div aria-hidden="true" class="works-modal modal fade" id="worksModal-1" role="dialog" tabindex="-1">
-            <!-- works modal content 1 start -->
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div><!-- container start -->
-                <div class="container">
-                    <!-- row start -->
-                    <div class="row">
-                        <!-- col start -->
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <!-- works modal body 1 start -->
-                            <div class="modal-body">
-                                <div class="modal-content-date">
-                                    May 10, 2017, Wednesday
-                                </div>
-                                <h2>
-                                    Lorem ipsum dolor sit amet
-                                </h2>
-                                <p class="item-intro">
-                                    Photography / Portfolio
-                                </p><img alt="Works Modal" class="img-responsive" src="img/works/works-1.jpg">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod in tellus in mattis. Aliquam erat volutpat. Praesent ultricies aliquet erat a semper. Maecenas
-                                    risus ex, suscipit cursus felis vitae, iaculis tempor dolor. In dignissim accumsan ullamcorper. Aliquam nec augue id mauris convallis venenatis.
-                                </p><button class="c-btn c-btn-dark" data-dismiss="modal" type="button"><span>Close</span></button>
-                            </div><!-- works modal body 1 end -->
-                        </div><!-- col end -->
-                    </div><!-- row end -->
-                </div><!-- container end -->
-            </div><!-- works modal content 1 end -->
-        </div><!-- works modal 1 end -->
-        <!-- works modal 2 start -->
-        <div aria-hidden="true" class="works-modal modal fade" id="worksModal-2" role="dialog" tabindex="-1">
-            <!-- works modal content 2 start -->
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div><!-- container start -->
-                <div class="container">
-                    <!-- row start -->
-                    <div class="row">
-                        <!-- col start -->
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <!-- works modal body 2 start -->
-                            <div class="modal-body">
-                                <div class="modal-content-date">
-                                    May 11, 2017, Thursday
-                                </div>
-                                <h2>
-                                    Lorem ipsum dolor sit amet
-                                </h2>
-                                <p class="item-intro">
-                                    Photography / Portfolio
-                                </p><img alt="Works Modal" class="img-responsive" src="img/works/works-2.jpg">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod in tellus in mattis. Aliquam erat volutpat. Praesent ultricies aliquet erat a semper. Maecenas
-                                    risus ex, suscipit cursus felis vitae, iaculis tempor dolor. In dignissim accumsan ullamcorper. Aliquam nec augue id mauris convallis venenatis.
-                                </p><button class="c-btn c-btn-dark" data-dismiss="modal" type="button"><span>Close</span></button>
-                            </div><!-- works modal body 2 end -->
-                        </div><!-- col end -->
-                    </div><!-- row end -->
-                </div><!-- container end -->
-            </div><!-- works modal content 2 end -->
-        </div><!-- works modal 2 end -->
-        <!-- works modal 3 start -->
-        <div aria-hidden="true" class="works-modal modal fade" id="worksModal-3" role="dialog" tabindex="-1">
-            <!-- works modal content 3 start -->
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div><!-- container start -->
-                <div class="container">
-                    <!-- row start -->
-                    <div class="row">
-                        <!-- col start -->
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <!-- works modal body 3 start -->
-                            <div class="modal-body">
-                                <div class="modal-content-date">
-                                    May 12, 2017, Friday
-                                </div>
-                                <h2>
-                                    Lorem ipsum dolor sit amet
-                                </h2>
-                                <p class="item-intro">
-                                    Photography / Portfolio
-                                </p><img alt="Works Modal" class="img-responsive" src="img/works/works-3.jpg">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod in tellus in mattis. Aliquam erat volutpat. Praesent ultricies aliquet erat a semper. Maecenas
-                                    risus ex, suscipit cursus felis vitae, iaculis tempor dolor. In dignissim accumsan ullamcorper. Aliquam nec augue id mauris convallis venenatis.
-                                </p><button class="c-btn c-btn-dark" data-dismiss="modal" type="button"><span>Close</span></button>
-                            </div><!-- works modal body 3 end -->
-                        </div><!-- col end -->
-                    </div><!-- row end -->
-                </div><!-- container end -->
-            </div><!-- works modal content 3 end -->
-        </div><!-- works modal 3 end -->
-        <!-- works modal 4 start -->
-        <div aria-hidden="true" class="works-modal modal fade" id="worksModal-4" role="dialog" tabindex="-1">
-            <!-- works modal content 4 start -->
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div><!-- container start -->
-                <div class="container">
-                    <!-- row start -->
-                    <div class="row">
-                        <!-- col start -->
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <!-- works modal body 4 start -->
-                            <div class="modal-body">
-                                <div class="modal-content-date">
-                                    May 13, 2017, Saturday
-                                </div>
-                                <h2>
-                                    Lorem ipsum dolor sit amet
-                                </h2>
-                                <p class="item-intro">
-                                    Photography / Portfolio
-                                </p><img alt="Works Modal" class="img-responsive" src="img/works/works-4.jpg">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod in tellus in mattis. Aliquam erat volutpat. Praesent ultricies aliquet erat a semper. Maecenas
-                                    risus ex, suscipit cursus felis vitae, iaculis tempor dolor. In dignissim accumsan ullamcorper. Aliquam nec augue id mauris convallis venenatis.
-                                </p><button class="c-btn c-btn-dark" data-dismiss="modal" type="button"><span>Close</span></button>
-                            </div><!-- works modal body 4 end -->
-                        </div><!-- col end -->
-                    </div><!-- row end -->
-                </div><!-- container end -->
-            </div><!-- works modal content 4 end -->
-        </div><!-- works modal 4 end -->
-        <!-- works modal 5 start -->
-        <div aria-hidden="true" class="works-modal modal fade" id="worksModal-5" role="dialog" tabindex="-1">
-            <!-- works modal content 5 start -->
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div><!-- container start -->
-                <div class="container">
-                    <!-- row start -->
-                    <div class="row">
-                        <!-- col start -->
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <!-- works modal body 5 start -->
-                            <div class="modal-body">
-                                <div class="modal-content-date">
-                                    May 14, 2017, Sunday
-                                </div>
-                                <h2>
-                                    Lorem ipsum dolor sit amet
-                                </h2>
-                                <p class="item-intro">
-                                    Photography / Portfolio
-                                </p><img alt="Works Modal" class="img-responsive" src="img/works/works-5.jpg">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod in tellus in mattis. Aliquam erat volutpat. Praesent ultricies aliquet erat a semper. Maecenas
-                                    risus ex, suscipit cursus felis vitae, iaculis tempor dolor. In dignissim accumsan ullamcorper. Aliquam nec augue id mauris convallis venenatis.
-                                </p><button class="c-btn c-btn-dark" data-dismiss="modal" type="button"><span>Close</span></button>
-                            </div><!-- works modal body 5 end -->
-                        </div><!-- col end -->
-                    </div><!-- row end -->
-                </div><!-- container end -->
-            </div><!-- works modal content 5 end -->
-        </div><!-- works modal 5 end -->
-        <!-- works modal 6 start -->
-        <div aria-hidden="true" class="works-modal modal fade" id="worksModal-6" role="dialog" tabindex="-1">
-            <!-- works modal content 6 start -->
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div><!-- container start -->
-                <div class="container">
-                    <!-- row start -->
-                    <div class="row">
-                        <!-- col start -->
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <!-- works modal body 6 start -->
-                            <div class="modal-body">
-                                <div class="modal-content-date">
-                                    May 14, 2017, Sunday
-                                </div>
-                                <h2>
-                                    Lorem ipsum dolor sit amet
-                                </h2>
-                                <p class="item-intro">
-                                    Photography / Portfolio
-                                </p><img alt="Works Modal" class="img-responsive" src="img/works/works-6.jpg">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod in tellus in mattis. Aliquam erat volutpat. Praesent ultricies aliquet erat a semper. Maecenas
-                                    risus ex, suscipit cursus felis vitae, iaculis tempor dolor. In dignissim accumsan ullamcorper. Aliquam nec augue id mauris convallis venenatis.
-                                </p><button class="c-btn c-btn-dark" data-dismiss="modal" type="button"><span>Close</span></button>
-                            </div><!-- works modal body 6 end -->
-                        </div><!-- col end -->
-                    </div><!-- row end -->
-                </div><!-- container end -->
-            </div><!-- works modal content 6 end -->
-        </div><!-- works modal 6 end -->
-        <!-- works modal content wrapper end -->
-        <!-- scripts start -->
-        <script src="js/plugins.js" type="text/javascript">
-        </script> 
-        <script src="js/hombre.js" type="text/javascript">
-        </script><!-- scripts end -->
-    </body>
+        </div>
+        <!-- Side Nav End-->
+        <!-- Coming Soon Contant -->
+        <div class="dez-coming-soon style-9 wow fadeIn" id="particles-js" data-wow-duration="0.80s" data-wow-delay="0.50s" style="background-image:url(images/background/bg6.gif)">
+            <div class="clearfix dez-coming-bx">
+				<div class="dez-content top-left center-md">
+					<div class="logo wow fadeInUp bottom-left" data-wow-duration="1.5s" data-wow-delay="1.0s">
+						<a href="index.html"><img src="images/logo9.png" alt=""></a>
+					</div>
+					<div class="countdown">
+						<div class="date wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.0s">
+							<span class="days time"></span>
+							<span>Days</span>
+						</div>
+						<div class="date wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.3s">
+							<span class="hours time"></span>
+							<span>Hours</span>
+						</div>
+						<div class="date wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.6s">
+							<span class="mins time"></span>
+							<span>Minutes</span>
+						</div>
+						<div class="date wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.9s">
+							<span class="secs time"></span>
+							<span>Second</span>
+						</div>
+					</div>
+					<h2 class="dez-title ml2 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.5s"><span>We are launching soon please </span><br/><span>reload after minutes</span></h2>
+					<div class="dez-coming-btn wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="2.2s">
+						<a href="javascript:void(0);"  class="site-button openbtn button-lg m-r10">Get In Touch</a>
+						<a href="javascript:void(0);" data-toggle="modal" data-target="#exampleModal" class="site-button button-lg outline white">Subscribe Now</a>
+					</div>
+				</div>
+				<div class="text-right bottom-right">
+					<ul class="dez-social-icon social-2">
+						<li class="wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="1.0s"><a href="https://www.facebook.com/IcanErlambang"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+						<li class="wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="1.3s"><a href="https://www.instagram.com/erlambang_ican"><i class="fa fa-instagram"></i><span>Instagram</span></a></li>
+						<li class="wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="1.6s"><a href="https://api.whatsapp.com/send/?phone=083822426272"><i class="fa fa-whatsapp"></i><span>Whatsapp</span></a></li>
+					</ul>
+					<p class="copyright-text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="2s"><span>© 2022 - Made with</span><span class="heart"><i></i></span>By <a href="https://ican-nine.vercel.app" class="made-by">Zcy7he</a></p>
+				</div>
+            </div>
+        </div>
+        <!-- Coming Soon Contant -->
+		<div class="modal fade subscribe-box" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<form action="script/mailchamp.php" class="dzSubscribe modal-content" method="post">
+					<div class="modal-header">
+						<img src="images/bell9.png" alt=""/>
+						<h5 class="modal-title" id="exampleModalLabel">Subscribe Newsletter</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt labore dolore.</p>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<input name="dzEmail" id="SubscribeInput" required="required" class="form-control radius-no" placeholder="Your Email Address" type="email">
+							<div class="dzSubscribeMsg"></div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="site-button gradient button-lg shadow">Subscribe Now</button>
+					</div>
+				</form>
+			</div>
+		</div>
+    <!-- Content END-->
+</div>
+<!-- JavaScript  files ========================================= -->
+<script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
+<script src="plugins/bootstrap/js/popper.min.js"></script><!-- POPPER.MIN JS -->
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="plugins/countdown/jquery.countdown.js"></script><!-- JQUERY COUNTDOWN -->
+<script src="plugins/scroll/scrollbar.min.js"></script><!-- SCROLLBAR -->
+<script src="plugins/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED -->
+<script src="plugins/masonry/masonry-3.1.4.js"></script><!-- MASONRY -->
+<script src="plugins/masonry/masonry.filter.js"></script><!-- MASONRY -->
+<script src="plugins/lightgallery/js/lightgallery-all.min.js"></script><!-- LIGHTGALLERY -->
+<script src="plugins/particles/particles.js"></script><!-- PARTICLES JS  -->
+<script src="plugins/particles/particles.app.js"></script><!-- PARTICLES JS  -->
+<script src="js/jquery.localizationTool.js"></script><!-- localizationTool JS -->
+<script src="js/translator.js"></script><!-- Translator JS -->
+<script src="js/custom.min.js"></script><!-- CUSTOM FUCTIONS  -->
+<script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
+<script src="js/wow.js"></script><!-- WOW JS -->
+<script src="plugins/anime/anime.min.js"></script><!-- CUSTOM FUCTIONS  -->
+<script src="plugins/anime/app.js"></script><!-- CUSTOM FUCTIONS  -->
+<script src='https://www.google.com/recaptcha/api.js'></script> <!-- Google API For Recaptcha  -->
+<div class="site-nav-overlay js-nav" style="opacity: 0;"></div>
+</body>
 </html>
